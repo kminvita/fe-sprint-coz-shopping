@@ -1,0 +1,28 @@
+.HeaderSection {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#cozShopping {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-right {
+    padding: 10px;
+}
+
+.hamburger {
+    padding-right: 20px;
+}
