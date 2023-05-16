@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react";
 
 const HeaderSection = () => {
     const dropsownRef = useRef(null);
-    const [DropdownOpen, setDropdownOpen] = useState(true);
+    const [DropdownOpen, setDropdownOpen] = useState(false);
 
     const handleDropdown = ({target}) => {
         if (DropdownOpen && !dropsownRef.current.contains(target))
@@ -27,7 +27,7 @@ const HeaderSection = () => {
             <div className="header-left">
                 <div className='shopLogo'>
                     <Link to="/">
-                        <img src={logo} />    
+                        <img src={logo} alt="logo"/>    
                     </Link>
                 </div>
                 <div className='shopName'>
@@ -38,6 +38,7 @@ const HeaderSection = () => {
                 <img 
                 className='hamburger' 
                 src={hamburger}
+                alt="hamburger"
                 onClick={(e) => {
                     e.stopPropagation();
                     setDropdownOpen(!DropdownOpen);
