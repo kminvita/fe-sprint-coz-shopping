@@ -1,4 +1,18 @@
 .Footer {
     font-size: 15px;
     text-align: center;
+    border: 1px solid blue;
+    margin-top: 5px;
+}
+
+#text1, #text2 {
+    margin: 0;
+}
+
+#text1 {
+    padding-top: 20px;
+}
+
+#text2 {
+    padding-bottom: 20px;
 }
