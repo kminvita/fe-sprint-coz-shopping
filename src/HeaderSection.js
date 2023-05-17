@@ -8,7 +8,7 @@ import { useEffect, useState, useRef } from 'react';
 
 const HeaderSection = () => {
     const dropdownRef = useRef(null);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const handleDropdown = (e) => {
         if (isDropdownOpen && !dropdownRef.current.contains(e.target))
@@ -33,7 +33,7 @@ const HeaderSection = () => {
                     </Link>
                 </div>
                 <div className='shopName'>
-                  <div id="cozShopping">coz-shopping</div>
+                  <div className="cozShopping">coz-shopping</div>
                 </div>
             </div>
             <div className='header-right'>
